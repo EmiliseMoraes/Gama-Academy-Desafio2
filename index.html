@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <title>Document</title>
+    <img class="displayed" src="./img/logo.png" alt="logo" srcset="./img/logo.png 320w,
+    ./img/logo.png 480w,
+    ./img/logo.png 800w" sizes="(max-width: 320px) 280px,
+   (max-width: 480px) 440px,
+   800px" src="./img/logo.png">
+
+    <nav id="menu">
+        <div class="lista">
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cadastrar</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Nossos Produtos</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section-container backgroud-one">
+            <img class="displayed" src="./img/img2.png" id="imagemProduto" srcset="">
+
+        </section>
+        <section id="produtosSection">
+           
+            <div>
+                <h1>Nossos Produtos</h1>
+                <div class="produtos" id="produtos">
+                    <h3 class="nome-produto" id="nomeProduto">Kit Papelaria 1</h3>
+                    <img src="./img/pngwing.com (1).png" alt="" id="img-produtos" sizes="(max-width: 320px) 280px,
+                (max-width: 480px) 440px,
+                800px">
+                    <p class="descricao" id="descricaoProduto">Kit Papelaria 1</p>
+                    <span class="preco" id="precoProduto">De:169,90 R$ Por: 101,40 R$</span>
+                    <button class="button-produtos" id="btnProdutos" onclick="addItem1()">Adicionar ao
+                        carrinho</button>
+
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+                    <div class="produtos">
+                        <h3 class="nome-produto" id="nomeProduto1">Kit Papelaria 2</h3>
+                        <img src="./img/pngwing.com (4).png" alt="" id="img-produtos" sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px">
+                        <p class="descricao" id="descricaoProduto1">Kit Papelaria 2</p>
+                        <span class="preco" id="precoProduto1">De:59,90 R$ Por: 29,40 R$</span>
+                        <button class="button-produtos" id="btnProdutos" onclick="addItem2()">Adicionar ao
+                            carrinho</button>
+
+                    </div>
+        </section>
+        <section>
+            <div>
+                    <div class="produtos">
+                        <h3 class="nome-produto" id="nomeProduto2">Kit Papelaria 3</h3>
+                        <img src="./img/pngwing.com (3).png" alt="" id="img-produtos" sizes="(max-width: 320px) 280px,
+                 (max-width: 480px) 440px,
+                 800px">
+                        <p class="descricao" id="descricaoProduto2">Kit Papelaria 3</p>
+                        <span class="preco" id="precoProduto2">De:29,90 R$ Por: 19,40 R$</span>
+                        <button class="button-produtos" id="btnProdutos" onclick="addItem3()">Adicionar ao
+                            carrinho</button>
+                </div>
+        </section>
+    </form>
+        <section>
+            <div>
+                <div class="container">
+                    <h1>Cadastre-se para receber novidades</h1>
+                    <form id="form">
+                        <input type="text" placeholder="Nome" id="nome">
+                        <input type="text" placeholder="Email" id="email">
+                        <input type="number" placeholder="CPF" id="cpf">
+                        <input type="number" placeholder="Telefone" id="telefone">
+
+                        <h3 id="endereco">Endereço</h3>
+                        <input type="text" placeholder="Rua" id="rua">
+                        <input type="number" placeholder="CEP" id="cep">
+                        <input type="number" placeholder="Número" id="numeroCasa">
+
+                        <input type="submit" value="Cadastrar" id="cadastrar">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+<footer>
+    <a href="#" target="_blank" style="position:fixed;bottom:20px;right:30px;">
+        <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
+            xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
+                fill="#4CAF50" />
+            <path
+                d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                fill="#FAFAFA" />
+        </svg>
+
+    </a>
+    <link rel="icon" type="imagem/png" href="/icons/favicon.ico" />
+</footer>
+
+</html>
+<script src="./js/script.js"></script>
